@@ -1,12 +1,12 @@
 from base import _node, _edge
 
-class Relation(_edge):
+class Rel(_edge):
   def __init__(self, label:str, src:str = '', dst:str = ''):
     super().__init__(label, src, dst)
     self.invar = list[lambda x:bool]
 
 
-class Entity(_node):
+class Ent(_node):
   def __init__(self, label:str, edges:dict[str:_edge] = {}):
     self.label = label
     self.edges = edges
@@ -20,6 +20,3 @@ class Entity(_node):
 
 
 
-
-
-print("yo")

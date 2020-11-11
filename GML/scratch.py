@@ -1,4 +1,4 @@
-from base import _node, _edge
+from classes import _node, _edge
 from graph import init
 
 G = init()
