@@ -1,5 +1,8 @@
+from dataclasses import dataclass
+from typing import *
+
 class _edge(object):
-  keys = set[str]
+  keys:set[str]
   def __init__(self, label: str, src: str = '', dst: str = ''):
     self.label = label
     assert(src in _edge.keys)
@@ -9,7 +12,7 @@ class _edge(object):
 
 
 class _node(object):
-  keys = set[str]
+  keys:set[str]
   def __init__(self, label: str, edges: dict[str:_edge] = {}):
     self.label = label
     self.edges = edges

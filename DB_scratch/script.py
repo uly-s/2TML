@@ -26,7 +26,7 @@ cmd = """create table base_attributes (
             desc TEXT,
             refs BLOB);"""
 
-#cursor.execute(cmd)
+cursor.execute(cmd)
 
 insert('base_attributes', ('bar', 'IQ', str([1, 2, 3, 4])))
 
