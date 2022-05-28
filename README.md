@@ -68,6 +68,42 @@ Thus any digital tool or VTT has to take a natural language book and implement i
 The wheel has been reinvented on this many, many times. In many different formats and languages. But none is really complete or extensible and reused between applications. Instead we have dozens, hundreds, maybe thousands of implementations of the 5E system scattered across the internet. None complete, comprehensive, or official and thus able to serve as a basis for a tool or VTT, most of which end up not great because there's huge amounts of interconnected logic to implement for even simple UI features witch then need to be heavily refined and polished for people to actually like and use what you're making.
 
 
+## My solution: digital first development with specialized tools for non developer game designers
+
+So when a game developer develops a game with a serious amount of crunch, data, mechanics defined by the rules. For the hard data/rules they are essentially defining a potentially quite intricate and complex schema, graph, algorithm that make up the rules for the game... in natural language. They're then responsible for making this NL defined schema complete and consistent across every possible act of game play. The rules can't ambiguously contradict each other and they can create very complex interactions between each other in ways they could not see coming. They may have to crunch a great deal of numbers to balance player ability, they have to plan around any way a player could develop their character to prevent things that could tottally break the game.
+
+## So people are defining a huge schema with algorithms acting on it in natural language, and then other people are tasked with trying to decipher from documents what that schema and algorithm look like in code.
+
+So why not just define the game digitally in the first place? With the hard/data rules defined by game devs stored in a machine readable format. So when a game dev creates a book, document, website etc to distribute their game the the digital version of the rules is already implemented and ready to go.
+
+## How?
+
+## 1. game design stage
+
+An application or system for game devs to help them define and develop the rules system for their game such that the system is stored internally in a robust machine readable format. The front end I imagine as a custom RPG editor suite that provides various tools to develop a model, such as a visual UML or ER diagram editor, a prologue like interface for defining and tracking rules, an SQL like DSL with a graphical builder as well as psueodo-terminal and script editor. 
+The ability to embed, reference, link various entities into NL documents, assign keywords to parts of the system for searching.
+Let them visualize their rule system, experiment and run simulations of gameplay. Run queries against parts of their system. Check for balance and consistency. 
+
+The idea is to build something for the game devs they want to use because it's taking huge amounts of mental overhead off of them, letting them develop a better game faster. If you just give them another chore they won't use it
+
+## 2. tool and platform development
+
+A game made and released with the application from 1. can export a ready made model of the game for consumption by other programs. It would probably be best if the model output by 1. was in some intermediate format easily translatible for use as an API/ABI/Interface in various languages configured to various needs. Has to strike a balance between power and compatibility. End goal is just to save software devs a huge amount of time and let them focus on developing their actual application without getting bogged down in business logic. This would also allow for total interoperability of content between platforms. 
+
+## 3. consumption by players
+
+I posit that tools and and platforms built on this system could be a lot more powerful and more polished as a baseline, but my dream for this is not to interact with the game through buttons and menus, but to provide a kind of smart GUI psuedo-terminal to players and especially GMs
+
+The power of learning vim/emacs and even just knowing all the keyboard shortcuts for your operating system is the ability to interact with a computer or type at the speed of thought instead of the speed of your mouse. I imagine a similar possibility for ttrpgs, a vim/emacs for gaming + ide intellisense features + basic nlp technology that let's you play at the speed of thought (or really the speed at which you make decisions, communicate, and can read relevant info). A terminal for VTTs giving you full expressive power over the game.
+
+((MORE ON THIS LATER))
+
+
+
+----------- blah blah------------
+A combination of internal/external DSLs and SQL like data definition/manipulation language + scripting, serving as the core of the backend for a series of frontend UI applications.
+
+
 
 ### 1. Queries
 Simple lookup commands for quickly finding info without scrolling
