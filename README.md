@@ -30,6 +30,43 @@ That's roughly the state of isolated tools tracking only a subset of 5E / ttrpgs
 
 ## Virtual Tabletops and Automation: a cursed problem
 
+By far the most mechanically intensive part of playing 5E is running combat encounters on a concrete map. Combat can be done without a physical map or tabletop in which case you can get great mileage out of Beyond and Discord with a bot for playing DND and interacting with beyond or a similar setup. A full on VTT can be used the same way but most people tend to prefer map based combat in general. 
+
+Making a really good VTT is a genuinely hard problem, there's a massive amount of logic, rules, and data to implement for a game like 5E and thus tons of features and functionality to develop just to digitize the core essentials needed to play 5E similar to how you could in person. So a well done comprehensive VTT represents a huge amount of developer hours in an industry with a small overall market cap, of which you are only targeting the people that play online. 
+
+The boon and promise of a VTT over meatspace is the specter or automation; playing 5E and especially combat involves a totally ridiculous amount of rules and moving pieces you have to keep track of one way or another. There are many digital combat trackers that act as a standalone application for overseeing and running combat, just tracking is not that hard to do well but automating combat is hard. Only certain parts of what goes into combat can even be automated.
+
+### Segway: hard versus soft data in 5E/ttrpgs
+
+From a software perspective DnD comes with two types of rules and data: which I've dubbed hard data/rules and soft data/rules. Hard refers to the portion of dnd that a computer can unambiguously understand and imeplement. Think numerical, categorical, boolean bits of data associated with various key words and a set well defined operations on the data/keywords that could all be represented in a schema or implemented with relatively basic programming constructs. Math, logic, and processes.
+
+Soft refers to any part of the game described and handled by natural language. Dialogue, flavor, descriptions. Stuff that is just a meaningless string or image to a computer.
+
+A VTT has a sort of implicit 'game state' tracking all the hard data and modifying it with hard rules.
+
+## Back to VTTs
+
+A VTT or software in general can obviously only directly implement and thus automate (to an extant) the hard aspects of a TTRPG. Ideally it facilitates or even improves the soft aspects in some way, or at least never gets in the way of them.
+
+While this is not even remotely a hard and fast rule, I've found that too much automation or just poorly done automation of the hard rules, or worse: an attempt to implement soft data parts of the game in some way directly can totally stifle creativity and at least representing the results of free form play; it then becomes essentially a subpar video game.
+
+So the ideal VTT automates all the boring parts of whatever you're doing while also allowing you to maniuplate the state of the game totally arbitrarily according to the soft aspects of play, such as the DM modifying the map mid combat with lots of flames to account for a PC starting a fire in a way their character sheet has no button for.
+
+(NEED TO CLEAN THIS UP LATER AND MOVE STUFF TO SUB SECTIONS)
+
+The problem is what exactly you want to automate and what parts of the game state you want to change manually are context dependant and change over time. You may have been quite happy with the VTT resolving and applying all your attack rolls the past however many turns, but now you want to do something non standard and creative but you're struggling to figure out how to get the VTT to let you do this. At worst forcing mental overhead on people remembering the result of your roleplay but at least pausing the entire game while you struggle with options, menus, and buttons.
+
+Thus I consider ttrpg automation a cursed problem (one with a contradictory solution): You want a VTT to automate exactly what you want it to at that moment while also allowing you to make any arbitrary change at any time, easily and without it getting in your way.
+
+
+## But why is it like this?
+
+I think the overall space of ttrpg software is a hugely unexplored and underdeveloped with tons of potential. I think it is this way because ttrpgs are fundamentally developed just like they've always been: for meatspace to be consumed by thinking humans.
+
+Thus any digital tool or VTT has to take a natural language book and implement in code the parts of the game they need for an application. For a big app like a full VTT this means creating a massive model of the entire game. From scratch or bits and pieces.
+
+The wheel has been reinvented on this many, many times. In many different formats and languages. But none is really complete or extensible and reused between applications. Instead we have dozens, hundreds, maybe thousands of implementations of the 5E system scattered across the internet. None complete, comprehensive, or official and thus able to serve as a basis for a tool or VTT, most of which end up not great because there's huge amounts of interconnected logic to implement for even simple UI features witch then need to be heavily refined and polished for people to actually like and use what you're making.
+
 
 
 ### 1. Queries
