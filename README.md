@@ -1,5 +1,8 @@
 # 2TML: Table-Top Modelling Language
 
+# TODO: CLEAN THIS UP INTO SECTIONS, VERY RAMBLY
+
+
 ## Preface 
 
 This has been a zombie repo for some time because when I initially concevied the core idea it was something other's said sounded cool and they could imagine some uses for it, but my conception of it was very vague and abstract to the point where I had no idea what I was even making let alone a roadmap or the next step. However I have been mulling over this idea ever since opening this repo while playing a lot of D&D online, using, investigating, reading about digital tools and systems made for RPGs or just used for them. Something finally clicked and now I know exactly what problem I'm trying to solve and what to make to solve that problem. 
