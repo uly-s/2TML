@@ -1,3 +1,0 @@
-"""
-    TODO: start brainstorming commands
-"""
